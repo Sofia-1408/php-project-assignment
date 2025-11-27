@@ -1,0 +1,49 @@
+===Database s5573681_php_project_database
+
+== Table structure for table comments
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|user_id|int(11)|No|
+|topic_id|int(11)|No|
+|comment|text|No|
+|commented_at|timestamp|No|current_timestamp()
+== Dumping data for table comments
+
+== Table structure for table topics
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|user_id|int(11)|No|
+|title|varchar(30)|No|
+|description|text|No|
+|created_at|timestamp|No|current_timestamp()
+== Dumping data for table topics
+
+== Table structure for table users
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|**username**|varchar(30)|No|
+|**email**|varchar(50)|No|
+|password|varchar(30)|No|
+== Dumping data for table users
+
+== Table structure for table votes
+
+|------
+|Column|Type|Null|Default
+|------
+|//**id**//|int(11)|No|
+|user_id|int(11)|No|
+|topic_id|int(11)|No|
+|vote_type|enum(&#039;up&#039;, &#039;down&#039;)|No|
+|voted_at|timestamp|No|current_timestamp()
+== Dumping data for table votes
+
